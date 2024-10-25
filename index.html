@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+
+<body class="bg-blue-500">
+    <h1 class="text-center text-3xl font-bold pt-12">Tip Calculator</h1>
+    <div class="container flex flex-col justify-center items-center pt-8">
+        <div class="flex flex-row justify-center items-center gap-6">
+            <div class="price flex flex-col">
+                <label class="p-2 mb-6">Price</label>
+                <label class="p-2 mb-4">Tip (%)</label>
+                <label class="p-2 mb-6">Number of People</label>
+            </div>
+            <div class="tip flex flex-col p-4">
+                <input id="total" class="border-2 border-black p-2 mb-4" type="number" placeholder="Total">
+                <input id="percent" class="border-2 border-black p-2 mb-4" type="number" placeholder="%">
+                <input id="person" class="border-2 border-black p-2 mb-4" type="number" placeholder="01">
+            </div>
+        </div>
+        <div class="btn pt-8">
+            <button class="border-2 border-black px-4 py-2 bg-blue-900 text-white" onclick="calculateDifference()">
+                Calculate
+            </button>
+        </div>
+        <div class="mt-4">
+            <p class="text-center text-xl font-bold">Result: <span id="result" class="text-white">0</span></p>
+        </div>
+    </div>
+</body>
+
+<script src="javascript.js"></script>
+
+</html>
